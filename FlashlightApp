@@ -1,0 +1,22 @@
+import SwiftUI
+
+struct ContentView: View {
+  @State var backgroundColor = Color.white
+
+  var body: some View{
+    ZStack{
+      backgroundColor
+      VStack{
+        Button("Flash Color") {
+          backgroundColor = Color.blue
+        }
+      }
+  }
+}
+}
+
+struct ContentView_Previews: PreviewProvider{
+  static var previews: some View{
+    ContentView()
+  }
+}
